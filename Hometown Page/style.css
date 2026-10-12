@@ -1,0 +1,90 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+  position: relative;
+  display: inline-block; /* Keeps the container tight around the image */
+}
+
+.hero img{
+  max-width: 100%; /* Prevents the image from overflowing its container */
+  height: 100%;    /* Maintains the original aspect ratio */
+  display: block;  /* Removes extra bottom spacing */
+}
+
+.events{
+  padding: 25px;
+  background-color: #A8DADC; /* Light gray background for contrast */
+  display: flex;
+  align-items: center; /* Vertically centers the gallery */
+  justify-content: space-around; /* Centers the gallery horizontally */
+
+}
+
+.events .img {
+  display: flex;       /* Aligns the images side-by-side */
+  justify-content: center; /* Centers the images within the container */
+  align-items: center; /* Vertically centers the images */
+    padding: 20px;
+  gap: 15px;           /* Puts equal spacing between the images */
+  width: 100%;         /* Ensures the gallery spans the full page width */
+}
+
+.events .img img{
+  width: 350px;         /* Forces them to fill their designated slot */
+  height: 300px;       /* Set whatever fixed height you want them all to have */
+  object-fit: cover;   /* Prevents distortion by cropping the edges to fit perfectly */
+  border-radius: 50%;
+}
+
+.events .img img:hover{
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+  
+}
+
+.events h2,h4{
+  display: flex;
+  text-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.card{
+    padding: 20px;
+    display: flex;
+    width: 800px;
+    height: 300px;
+    justify-content: space-around;
+    margin: 50px auto;
+    background-color: #457B9D;
+    color: #2b2839;
+    border-bottom: 5px solid #1D3557;
+    border-radius: 10px;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px 5px #1D3557;
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+.Profile-Image{
+    width: 300px;
+    margin: auto;
+}
+
+.card-content{
+  font-size: 25px;
+  color: #F1FAEE;
+  margin: auto;
+}
